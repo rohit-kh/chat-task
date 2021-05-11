@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <form>
+        	<input placeholder="Display Name" class="name" type="text" name="name" required>
+            <br>
+            <br>
+            <input placeholder="Email Address" class="email" type="email" name="email" required>
+            <br>
+            <br>
+            <input placeholder="Password" class="password" type="password" name="password" required>
+            <br>
+            <br>
+        	<button>Register</button> &nbsp; &nbsp;<a href="/login">Login</a>
+        </form>
+    </div>
+
+    {{>footer}}
+    <script src="/js/utils.js"></script> 
+    <script src="/js/register.js"></script> 
+</body>
+
+</html>

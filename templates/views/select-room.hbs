@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Select Room</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <form>
+        	<select>
+                {{#rooms}}
+                    <option value="{{_id}}">{{name}}</option>
+                {{/rooms}}
+            </select>
+        </form>
+    </div>
+
+    {{>footer}}
+    <script src="/js/utils.js"></script> 
+    {{!-- <script src="/js/register.js"></script>  --}}
+</body>
+
+</html>
